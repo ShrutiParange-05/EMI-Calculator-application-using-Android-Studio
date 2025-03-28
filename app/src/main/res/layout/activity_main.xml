@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <!-- Income Tax Calculator -->
+    <EditText
+        android:id="@+id/etSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Annual Salary"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btnCalculateTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Tax"/>
+
+    <TextView
+        android:id="@+id/tvTaxResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Result will be shown here"
+        android:textSize="16sp"/>
+
+    <!-- Loan EMI Calculator -->
+    <EditText
+        android:id="@+id/etLoanAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Loan Amount"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etInterestRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Interest Rate (%)"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/etTenure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Tenure (Years)"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnCalculateEMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate EMI"/>
+
+    <TextView   
+        android:id="@+id/tvEMIResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMI Result will be shown here"
+        android:textSize="16sp"/>
+</LinearLayout>
